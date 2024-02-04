@@ -54,35 +54,48 @@ text-align: center;
   border-radius:8px ;
   color: darkgreen;
 }
+.contanier {
+    background-image: url("./BG form.jpg");
+    height: 100vh;
+    width: 100% !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+/* .background-image:brightness(10%) */
+.w-50P P{
+  color: green;
 
-.form-box {
-            width: 619px;
-            height: 16px;
-            margin-right: 100px;
-            overflow: hidden;
-        }
-.form-container {
-            /* max-width: 100px; */
-            width: 100px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .btn-create {
-            background-color: #007bff;
-            color: #fff;
-            transition: background-color 0.3s ease;
-        }
-        .btn-create:hover {
-            background-color: #0056b3;
-        }
-        .form-control {
-            transition: box-shadow 0.3s ease;
-        }
-        .form-control:focus {
-            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-        }
+}
+
+.w-50 {
+    width: 40% !important;
+    position: absolute !important;
+    top: 120px;
+    border: 8px solid cadetblue !important;
+    border-radius: 10px;
+    left: 35%;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
+.btn-success {
+    background-color: black !important;
+    border: none !important;
+    width: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    .w-50 {
+        width: 100% !important;
+        left: 0 !important;
+    }
+}
+
 
 
   </style>
@@ -350,54 +363,67 @@ text-align: center;
   </div>
     
     <br>
-  <div class="container">
-    <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
-
-    <h1 class="text-center mb-4">Create an Account</h1>
-    <form>
-        <div class="mb-3">
-            <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="firstName" required>
-            
+  
+    <div class="contanier">
+      <form class="w-50 mx-auto py-5 shadow p-4" >
+        <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+       <h3 class="text-green">Create Account</h3>
+       <div class="mb-3 ">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="firstName" class="form-control" id="exampleFormControlInput1" placeholder="first name                                       Last name">
+      </div>
+       <div class="mb-3 ">
+           <label for="exampleFormControlInput1" class="form-label">Email address</label>
+           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+         </div>
+       <div class="mb-3 ">
+           <label for="exampleFormControlInput1" class="form-label">Password</label>
+           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=" password">
+         </div>
+         <div class="mb-3 ">
+          <label for="exampleFormControlInput1" class="form-label"> ConfirmPassword</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="  Confirm password">
         </div>
-        <div class="mb-3">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="lastName" required>
+         
+         <div class="mb-3 d-flex">
+           <button class="btn btn-success">Create New Account </button>
+         </div>
+         <div class="mb-3 ">
+          <label for="exampleFormControlInput1" class="form-label"> Sign up with Facebook</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="  Sign up with Facebook">
         </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required>
+        <div class="mb-3 ">
+          <label for="exampleFormControlInput1" class="form-label"> Sign up with Google</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=" Sign up with Google">
         </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" required>
-        </div>
-        <div class="mb-3">
-            <label for="confirmPassword" class="form-label">Confirm Password</label>
-            <input type="password" class="form-control" id="confirmPassword" required>
-        </div>
-        <button type="submit" class="btn btn-lg btn-create w-100 mb-3">Create Account</button>
-    </form>
-    <div class="social-login">
-      <i class="fa-brands fa-facebook"></i><input type="text" class="form-control mb-2" placeholder="Sign up with Facebook">
-       <i class="fa-brands fa-google"></i> <input type="text" class="form-control" placeholder="Sign up with Google">
+      </form>
     </div>
-</div>
+
     <br>
-    <form>
-      <div class="mb-3">
-        <h1>sign in</h1>
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <br>
+    <div class="contanier">
+      <form class="w-50 mx-auto py-5 shadow p-4" >
+        <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+       <h3 class="text-green">Sign In</h3>
+       <div class="mb-3 ">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+      <div class="mb-3 ">
+        <label for="exampleFormControlInput1" class="form-label">Password</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=" password">
       </div>
-      
-      <button type="Sign In" class="btn btn-primary">Sign In</button>
-    </form>
-  </body>
+      <button class="btn btn-success">Sign In </button>
+      <div class="mb-3 ">
+        <label for="exampleFormControlInput1" class="form-label"> Sign up with Facebook</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="  Sign up with Facebook">
+      </div>
+      <div class="mb-3 ">
+        <label for="exampleFormControlInput1" class="form-label"> Sign up with Google</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=" Sign up with Google">
+      </div>
+      <h6>Forgot Password?</h6>
+
+
 </body>
 </html>
